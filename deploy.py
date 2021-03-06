@@ -27,7 +27,7 @@ import sys
 # Support Code
 
 def get_prediction(to_pred):
-    pipe = joblib.load(f'lr_mod')
+    pipe = joblib.load(f'lin_mod')
 
     preds = pipe.predict(to_pred)
     for_df = {'Prediction':preds}
